@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="estilo.css"> <!--Arquivo css externo-->
+</head>
+<body>
+    <section>
+        <div class="container">
+            <header class="header">
+              <h1 id="title" class="text-center">Formulário de Pesquisa</h1>
+              <p id="description" class="description text-center">
+                Formulário genérico construido em HTML, CSS e JavaScript
+              </p>
+            </header>
+            <form id="survey-form">
+              <div class="form-group">
+                <label id="name-label" for="name">Nome</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="Digite seu nome completo"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Digite seu Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label id="number-label" for="number"
+                  >Idade<span class="clue">(opcional)</span></label
+                >
+                <input
+                  type="number"
+                  name="age"
+                  id="number"
+                  min="10"
+                  max="99"
+                  class="form-control"
+                  placeholder="Idade"
+                />
+              </div>
+              <div class="form-group">
+                <p>Qual opção melhor descreve sua função atual?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                  <option disabled selected value>Selecione uma opção</option>
+                  <option value="estudante">Estudante</option>
+                  <option value="estagio">Estagiário</option>
+                  <option value="regular">Emprego Regular</option>
+                  <option value="meio">Emprego Meio Período</option>
+                  <option value="outro">Outro</option>
+                </select>
+              </div>
+          
+              <div class="form-group">
+                <p>Orientação Sexual?</p>
+                <label>
+                  <input
+                    name="sexo"
+                    value="masculino"
+                    type="radio"
+                    class="input-radio"
+                    checked
+                  />Masculino</label
+                >
+                <label>
+                  <input
+                    name="sexo"
+                    value="feminino"
+                    type="radio"
+                    class="input-radio"
+                  />Feminino</label
+                >
+          
+                <label
+                  ><input
+                    name="sexo"
+                    value="outro"
+                    type="radio"
+                    class="input-radio"
+                  />Outro</label
+                >
+              </div>
+          
+              <div class="form-group">
+                <p>
+                  Qual sua especialidade em software?
+                </p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                  <option disabled selected value>Selecione uma opção</option>
+                  <option value="front">Front-end</option>
+                  <option value="back">Back-end</option>
+                  <option value="bd">Banco de Dados</option>
+                  <option value="full">Full-Stack</option>
+                </select>
+              </div>
+          
+              <div class="form-group">
+                <p>
+                  Quais áreas você mais gosta na computação?
+                  <span class="clue">(Pode escolher mais de uma opção)</span>
+                </p>
+          
+                <label
+                  ><input
+                    name="prefer"
+                    value="dev"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Dev</label
+                >
+                <label>
+                  <input
+                    name="prefer"
+                    value="bd"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Banco de Dados</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="redes"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Redes</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="es"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Engenharia de Software</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="devops"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Dev Ops</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="suporte"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Suporte</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="cloud"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Cloud Computing</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="ciencia"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Ciência de Dados</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="gti"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Gestão de T.I</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="segurança"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Cybersecurity</label
+                >
+                <label
+                  ><input
+                    name="prefer"
+                    value="jogos"
+                    type="checkbox"
+                    class="input-checkbox"
+                  />Games</label
+                >
+              </div>
+          
+              <div class="form-group">
+                <p>Comentários e Sugestões?</p>
+                <textarea
+                  id="comments"
+                  class="input-textarea"
+                  name="comment"
+                  placeholder="Digite seu comentário aqui..."
+                ></textarea>
+              </div>
+          
+              <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                  Enviar
+                </button>
+              </div>
+            </form>
+          </div>
+          
+    </section>
+
+    <footer>
+        <p>&copy; Luciano Rosa</p> <!--CopyRight-->
+    </footer>
+
+    <script src="script.js"></script> <!--Arquivo JS externo-->
+</body>
+</html>
